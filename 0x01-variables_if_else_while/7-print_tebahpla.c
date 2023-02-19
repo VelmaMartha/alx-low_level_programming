@@ -1,14 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  *main -Entry point
  *
  *Return: Always 0.
  *
  */
- int main(void)
+int main(void)
 {
 	int x;
-	for (x = 122; x <= 97; x++)
+
+	for (x = 122; x >= 97; x--)
 	{
 	putchar(x);
 	}
