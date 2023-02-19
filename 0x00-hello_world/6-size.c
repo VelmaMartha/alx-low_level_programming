@@ -22,11 +22,11 @@ int main(void)
 	char c;
 	int l;
 
-	printf("Size of char: %lu bytes\n",sizeof(c));
-	printf("Size of int: %lu bytes\n",sizeof(l));
-	printf("Size of long int: %lu bytes\n",sizeof(ld));
-	printf("Size of long long int: %lu bytes\n",sizeof(ld));
-	printf("Size of float: %lu bytes\n",sizeof(f));
-	return (0);	
+	printf("Size of a char: %lu byte(s)\n", sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", sizeof(l));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(ld));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(ld));
+	printf("Size of a float: %lu byte(s)\n", sizeof(f));
+	return (0);
 }
 
