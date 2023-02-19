@@ -16,16 +16,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int intType;
-	float floatType;
-	double doubleTpe;
-	char charType;
-}		printf ("size of int:%d bytes\n",(long),sizeof (intType));
-		printf ("size of float:%d bytes\n",sizeof (floatType));
-		printf ("size of double:%d bytes\n",sizeof (doubleType));
-		printf ("size of char:%d byte\n",sizeof (charType));
-		printf("size of int:%d bytes\n",(long long),sizeof(intType));
-}
-	return (0);
+	int ld;
+	float f;
+	double lf;
+	char c;
+	int l;
+
+	printf("Size of char: %lu bytes\n",sizeof(c));
+	printf("Size of int: %lu bytes\n",sizeof(l));
+	printf("Size of long int: %lu bytes\n",sizeof(ld));
+	printf("Size of long long int: %lu bytes\n",sizeof(ld));
+	printf("Size of float: %lu bytes\n",sizeof(f));
+	return (0);	
 }
 
