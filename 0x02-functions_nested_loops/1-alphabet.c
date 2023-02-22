@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
  * print_alphabet - prints alphabets
  *
  * Return: void
  */
-void print_alphabet()
+void print_alphabet(void)
 {
 	int x;
 
@@ -15,5 +14,3 @@ void print_alphabet()
 	}
 	_putchar('\n');
 }
-
-
