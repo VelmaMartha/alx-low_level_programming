@@ -2,7 +2,7 @@
 /**
  *_isdigit - checks if a character is a digit
  *@c: The number to be checked
- * Return: 1 for a character that will be a digit or 0 for any else
+ * Return: 1 or 0
  */
 int _isdigit(int c)
 {
@@ -13,7 +13,9 @@ int _isdigit(int c)
 	return (1);
 	}
 	else
+	}
 	return (0);
+	}
 }
 
 
