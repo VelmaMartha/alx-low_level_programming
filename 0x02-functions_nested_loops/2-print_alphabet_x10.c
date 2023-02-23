@@ -4,7 +4,7 @@
  *
  * Return: void
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int x;
 	int i;
@@ -15,5 +15,7 @@ void print_alphabet_x10(void);
 		{	
 		putchar(x);
 		}
+		putchar('\n')
 		}
+
 }
