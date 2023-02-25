@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   *print_line - print a straight line
-  *
+  *@n: printig a strsight line
   *Return: void
   */
 void print_line(int n)
