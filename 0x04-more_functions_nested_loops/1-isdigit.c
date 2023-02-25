@@ -4,7 +4,7 @@
  *@c: The number to be checked
  *Return: 1 or 0
  */
-int _isdigit(int c)
+int _isdigit
 {
 	int c;
 
