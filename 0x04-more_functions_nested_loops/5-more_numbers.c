@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * more_numbers - prints zero to fourteen ten times 
- *
- * Return: void.
- */
+  *more_numbers - prints zero to fourteen ten times 
+  *
+  *Return: void
+  */
 void more_numbers(void)
 {
-	int i;
+	int j;
 	int x;
 
-	for (i = 1; i <= 10; i++)
+	for (j = 1; j <= 10; j++)
 	{
 		for (x = 0; x >= 14; x++)
 		{
-			_putchar (j);
+		_putchar(j);
 		}
-		_putchar ('\n');
+		_putchar('\n');
 	}
 }
