@@ -1,8 +1,8 @@
 #include "main.h"
 /**
   *_strcat -  concatenates two strings
-  *@dest - points to a character
-  *@src - points to a character
+  *@dest: points to a character
+  *@src: points to a character
   * Return: dest
   */
 char *_strcat(char *dest, char *src)
@@ -23,8 +23,8 @@ char *_strcat(char *dest, char *src)
 	}
 	for (n = 0; n < m;  n++)
 	{
-		dest[i] = src[n];
-		i++;
+	dest[i] = src[n];
+	i++;
 	}
 	dest[i] = '\0';
 	return dest;
