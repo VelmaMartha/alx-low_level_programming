@@ -1,5 +1,6 @@
 !<arch>
-0-isupper.c/    0           0     0     644     184       `
+0-isupper.c/    0           0     0     644     197       `
+#include <stdio.h>
 #include "main.h"
 /**
  * _isupper - uppercase letters
@@ -11,10 +12,10 @@ int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
-	else
 	return (0);
 }
-0-memset.c/     0           0     0     644     371       `
+
+0-memset.c/     0           0     0     644     370       `
 #include "main.h"
 /**
  * _memset - fill a block of memory with a specific value
@@ -28,7 +29,6 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
 
-
 	for (; n > 0; i++)
 	{
 		s[i] = b;
@@ -36,7 +36,6 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
-
 0-putchar.c/    0           0     0     644     261       `
 #include <unistd.h> 
  
@@ -53,20 +52,19 @@ int _putchar(char c)
 } 
 
 
-0-strcat.c/     0           0     0     644     343       `
+0-strcat.c/     0           0     0     644     333       `
 #include "main.h"
  /**
- * _strcat - concatenates two strings
- * @dest: input value
- * @src: input value
+ *_strcat: concatenates two strings
+ *@dest: input value
+ *@src: input value
  *
- * Return: void	
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
-
 
 	i = 0;
 	while (dest[i] != '\0')
@@ -79,17 +77,14 @@ char *_strcat(char *dest, char *src)
 		dest[i] = src[j];
 		i++;
 		j++;
-	}		
-
-
+	}
 	dest[i] = '\0';
 	return (dest);
 }
 
 
-1-isdigit.c/    0           0     0     644     200       `
+1-isdigit.c/    0           0     0     644     196       `
 #include "main.h"
-		
 /**
  * _isdigit - checks for a digit (0 through 9)
  * @c: int to be checked
@@ -99,8 +94,7 @@ int _isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
-
-1-memcpy.c/     0           0     0     644     359       `
+1-memcpy.c/     0           0     0     644     357       `
 #include "main.h"
 /**
  *_memcpy - a function that copies memory area
@@ -115,7 +109,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	int r = 0;
 	int i = n;
 
-
 	for (; r < i; r++)
 	{
 		dest[r] = src[r];
@@ -124,8 +117,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-
-1-strncat.c/    0           0     0     644     404       `
+1-strncat.c/    0           0     0     644     402       `
 #include "main.h"
 /**
  * _strncat - concatenate two strings
@@ -140,7 +132,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int j;
-
 
 	i = 0;
 	while (dest[i] != '\0')
@@ -157,8 +148,8 @@ char *_strncat(char *dest, char *src, int n)
 	dest[i] = '\0';
 	return (dest);
 }
-
-2-strchr.c/     0           0     0     644     239       `
+2-strchr.c/     0           0     0     644     256       `
+#include <stdio.h>
 #include "main.h"
 /**
  * _strchr - Entry point
@@ -170,7 +161,6 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-
 	for (; s[i] >= '\0'; i++)
 	{
 		if (s[i] == c)
@@ -178,9 +168,9 @@ char *_strchr(char *s, char c)
 	}
 	return (0);
 }
+2-strlen.c/     0           0     0     644     225       `
 
-
-2-strlen.c/     0           0     0     644     209       `
+#include <stdio.h>
 #include "main.h"
 /**
  * _strlen - returns the length of a string
@@ -191,19 +181,15 @@ int _strlen(char *s)
 {
 	int longi = 0;
 
-
 	while (*s != '\0')
 	{
 		longi++;
 		s++;
 	}
-
-
 	return (longi);
 }
 
-
-2-strncpy.c/    0           0     0     644     313       `
+2-strncpy.c/    0           0     0     644     332       `
 #include "main.h"
 /**
  * _strncpy - copy a string
@@ -231,6 +217,8 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 
+	return (dest);
+}
 3-islower.c/    0           0     0     644     202       `
 #include "main.h"
 /**
@@ -243,22 +231,18 @@ int _islower(int c)
 	return (c >= 'a' && c <= 'z');
 }
 
-3-puts.c/       0           0     0     644     217       `
+3-puts.c/       0           0     0     644     110       `
 #include "main.h"
 void _puts(char *str)
-#include<stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int i;
+
+	i = 0;
+	while (str[i] = '\0')
+	{
+		_putchar(str[i]);
+	}
 }
-
-
 3-strcmp.c/     0           0     0     644     306       `
 #include "main.h"
 /**
@@ -317,8 +301,8 @@ unsigned int _strspn(char *s, char *accept)
 }
 
 
-4-isalpha.c/    0           0     0     644     237       `
-#include "main.h"`	
+4-isalpha.c/    0           0     0     644     236       `
+#include "main.h"	
 /**
  * _isalpha - checks for alphabetic character
  * @c: the character to be checked
@@ -328,7 +312,6 @@ int _isalpha(int c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
-
 
 4-strpbrk.c/    0           0     0     644     282       `
 #include "main.h"
@@ -428,19 +411,47 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-_putchar.c/     0           0     0     644     261       `
-#include <unistd.h> 
- 
-/** 
- * _putchar - writes the character c to stdout 
- * @c: The character to print 
- * 
- * Return: On success 1. 
- * On error, -1 is returned, and errno is set appropriately. 
- */ 
-int _putchar(char c) 
-{ 
- return (write(1, &c, 1)); 
-} 
+_putchar.c/     0           0     0     644     247       `
+#include <unistd.h>
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 
+
+100-atoi.c/     0           0     0     644     424       `
+#include "main.h"
+/**
+ * _atoi - convert a string into an integer
+ *
+ * @s: the string to use
+ *
+ * Return: integer.
+ */
+int _atoi(char *s)
+{
+	int sign = 1, i = 0;
+	unsigned int res = 0;
+
+	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	{
+		res = (res * 10) + (s[i] - '0');
+		i++;
+	}
+	res *= sign;
+	return (res);
+}
 
