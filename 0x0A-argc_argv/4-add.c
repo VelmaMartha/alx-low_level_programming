@@ -40,7 +40,7 @@ int checknum(char *s)
 	unsigned int i;
 
 	i = 0;
-	while (1 < strlen(s))
+	while (i < strlen(s))
 	{
 		if (!isdigit(s[i]))
 		{
